@@ -1,3 +1,5 @@
+# Whatwhen
+
 `whatwhen` is a higher-level topological sort, a useful algorithm to resolve dependencies and calculate a workable execution order for functions and other things.
 
 Basic topological sorting:
@@ -55,6 +57,6 @@ In addition to dictionaries, the metadata on tasks can also be added to function
 
     whatwhen.sort([one, two])
 
-WhatWhen will return the original functions (or dictionaries) in sorted order, rather than just a sorted list of node names, so it's slightly easier to work with than a raw topological sort.
+Whatwhen will return the original functions (or dictionaries) in sorted order, rather than just a sorted list of node names, so it's slightly easier to work with than a raw topological sort.
 
-WhatWhen lets the [tarjan](https://github.com/bwesterb/py-tarjan) module do most of the heavy lifting, so there's really only about 40 lines of wrapper code to this module. It's up to you to decide whether you'd rather build on top of WhatWhen or plain Tarjan.
+Whatwhen lets the [tarjan](https://github.com/bwesterb/py-tarjan) module do most of the heavy lifting, so there's really only about 40 lines of wrapper code to this module. It's up to you to decide whether you'd rather build on top of WhatWhen or plain Tarjan.
